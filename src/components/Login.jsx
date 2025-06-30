@@ -32,7 +32,7 @@ const Login = () => {
       setPassword("");
     } catch (error) {
       console.log(error);
-      toast.error(error.response.data.errors);
+      toast.error(error.response?.data?.errors);
     }
   };
 
