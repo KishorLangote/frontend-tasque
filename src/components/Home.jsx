@@ -75,7 +75,7 @@ const Home = () => {
             },
         }
       );
-      console.log("response:", response.data);
+     
       setTodos(todos.map((t) => (t._id === id ? response.data.todo : t)));
     } catch (error) {
       console.error(error);
