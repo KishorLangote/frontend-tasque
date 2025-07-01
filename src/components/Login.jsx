@@ -24,7 +24,7 @@ const Login = () => {
           },
         }
       );
-      console.log(data)
+      
       toast.success(data.message || "User logged in successfully!");
       localStorage.setItem("jwt", data.token);
       navigate("/");
